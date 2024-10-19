@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/home.css">
+    <script src="./script/scriptINDEX.js" defer></script>
+    <title>Sponge Attack</title>
+</head>
+
+<body>
+    <h1 id="headline">Sponge Attack</h1>
+
+    <div class="text">
+        <p>Sponge Attack is an exciting local game where you fight for your survival against another player. Here’s how
+            the game works:<br>
+            <br>
+
+            Name Entry: At the beginning of the game, you will be prompted to enter your name. This helps to identify
+            your character in the game and allows other players to recognize you.
+
+            Character Selection: After entering your name, you can choose your character. There are various characters
+            to choose from, each with unique abilities and traits.
+
+            Rolling for Life: Once all players have selected their characters, the actual fight for survival begins. The
+            game uses a dice system where each player rolls the dice in each round. The dice results determine whether
+            you attack or get attacked.
+
+            Winning: The game ends when a player has lost all their life points. The other player is then declared the
+            winner.<br> <br>
+        </p>
+    </div>
+
+    <h1 id="startGameOne" class="startGame">You already know everything? <br>Start playing <a
+            href="./pages/game.html">now</a>!</h1>
+    <br>
+    <h1 id="BackgroundTutorial" class="changeFont">Backgrounds</h1>
+
+    <div id="backgrounds">
+        <img src="./images/Background/Images/Background1.jpg" alt="" id="background1" class="backgroundImage">
+        <img src="./images/Background/Images/Background2.jpg" alt="" id="background2" class="backgroundImage">
+        <img src="./images/Background/Images/Background3.jpg" alt="" id="background3" class="backgroundImage">
+        <img src="./images/Background/Images/BackgroundFive.jpg" alt="" id="background4" class="backgroundImage">
+        <img src="./images/Background/Images/BackgroundFour.jpg" alt="" id="background5" class="backgroundImage">
+        <img src="./images/Background/Images/BackgroundSix.jpg" alt="" id="background6" class="backgroundImage">
+    </div>
+
+    <h1 id="TutorialCharacter" class="changeFont">Characters</h1>
+    <div class="text">
+        <p>The selection of characters is very diverse. First, you and your opponent can decide who will take the team
+            with the Spongebob characters and who will take the team with the Family Guy characters. Then, each team has
+            unique characters with different abilities. Here, the following characters are introduced to you!</p>
+    </div>
+
+    <div>
+        <h2 id="TeamSpongebob" class="changeFont">Team Spongebob</h2>
+
+
+        <div class="CharakterGrid">
+
+            <div id="CharacterGood1">
+                <a href="#Spongebob"><img id="CharacterGood1Image" src="./images/character/image/Spongebob.jpg   "
+                        alt="">
+                    <p class="overlay">This is Spongeob. He isn't very smart, so he dont know how to deal much damage,
+                        but beacuse he's a Sponge, he can take much damage.</p>
+                </a>
+            </div>
+
+            <div id="CharacterGood2">
+                <a href="#Patrick"><img id="CharacterGood2Image" src="./images/character/image/Patrick.jpg" alt="">
+                    <p class="overlay">Partick isn't smart - Just like Spongebob, but somehow he find out how to deal
+                        damage. Well because he's dumb, he completly forgets about defense.</p>
+                </a>
+                </p>
+            </div>
+
+            <div id="CharacterGood3">
+                <a href="#Taddaeus"><img id="CharacterGood3Image" src="./images/character/image/Squidward.jpg" alt="">
+                    <p class="overlay">Squidward is smart, so he knows he's not going to win, if he put his whole effort
+                        in dealing damage or defending himself, so he's going to care about both.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="TeamGriffins" class="changeFont">Team Griffins</h2>
+
+        <div class="CharakterGrid">
+            <div id="CharacterEvil1"><a href=""><img id="CharacterEvil1Image" src="./images/character/image/Meg.jpg"
+                        alt="">
+                    <p class="overlay">Meg Griffin is very ugly, but that isn't very important, right? WRONG! Everyone
+                        thinks she is very bad at anything, but she isn't as dumb as everyone thinks!</p>
+                </a></div>
+            <div id="CharacterEvil2">
+                <img src="./images/character/image/Peter.jpg" alt="" id="CharacterEvil2Image">
+                <p class="overlay">Peter Griffin would know how to deal damage, but because he drank to much last night,
+                    he's missing nearly every shot, so he's not going to deal much damage!</p>
+            </div>
+            <div id="CharacterEvil3">
+                <img src="./images/character/image/Stewie.jpg" alt="" id="CharacterEvil3Image">
+                <p class="overlay">Stewie is the smartes of this three! He thinks, he's only going to win, if he puts
+                    his whole effort in dealing much damage.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 id="startGameTwo" class="startGame">Know you know everthing - i hope you will enjoy the Game <a
+                href="./pages/game.html">here</a>!</h1>
+    </div>
+
+
+    <div id="Griffins" onclick="themeGriffins()">Theme Griffins</div>
+    <div id="Spongebob" onclick="themeSpongebob()">Theme Spongebob</div>
+
+</body>
+
+</html>

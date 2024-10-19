@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Griffins';
+    src: url(../Font/Famig___.TTF);
+}
+
+@font-face {
+    font-family: 'regularSpace';
+    src: url(../Font/zekton.otf);
+}
+
+@font-face {
+    font-family: 'Crabby';
+    src: url(../Font/Krabby\ Patty.ttf);
+}
+
+html{
+    scrollbar-width: thin;
+}
+
+body {
+    background-image: url(../images/Background/Images/Background1.jpg);
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1,
+h2 {
+    font-size: 4em;
+    text-align: center;
+    font-family: Crabby;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 15px;
+    padding: 1%;
+    border: 4px rgb(0, 0, 0) solid;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    text-align: justify;
+    color: white;
+    font-family: regularSpace;
+    font-weight: bolder;
+}
+
+.text {
+    font-size: 1.5rem;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    background-color: rgba(0, 0, 0, 0.664);
+    padding: 1%;
+    border-radius: 15px;
+    border: 4px rgb(0, 0, 0) solid;
+}
+
+.backgroundImage {
+    width: 100%;
+    border: white 2px solid;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    filter: grayscale(70%);
+}
+
+.backgroundImage:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+#backgrounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+/* Charaktere */
+
+.CharakterGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.CharakterGrid img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.overlay {
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    left: 1%;
+    bottom: 21.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.409);
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    cursor: default;
+}
+
+#CharacterGood1:hover .overlay,
+#CharacterGood2:hover .overlay,
+#CharacterGood3:hover .overlay,
+#CharacterEvil1:hover .overlay,
+#CharacterEvil2:hover .overlay,
+#CharacterEvil3:hover .overlay {
+    opacity: 1;
+    cursor: pointer
+}
+
+#CharacterGood1Image,
+#CharacterGood2Image,
+#CharacterGood3Image,
+#CharacterEvil1Image,
+#CharacterEvil2Image,
+#CharacterEvil3Image {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    border: 5px white solid;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+#CharacterGood1:hover img,
+#CharacterGood2:hover img,
+#CharacterGood3:hover img,
+#CharacterEvil1:hover img,
+#CharacterEvil2:hover img,
+#CharacterEvil3:hover img {
+    transform: scale(1.01);
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+
+.startGame {
+    font-size: 2.5rem;
+}
+
+.startGame a {
+    color: rgb(147, 147, 147);
+    font-size: 3rem;
+}
+
+.startGame a:hover {
+    color: rgb(100, 100, 100);
+}
+
+#Spongebob,
+#Griffins {
+ position: fixed;
+    bottom: 5%;
+    left: 2%;
+    font-size: 1.5rem;
+    font-family: Crabby;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+#Spongebob:hover,
+#Griffins:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#Spongebob {
+    display: none;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/scriptGAME.js" defer></script>
+    <link rel="stylesheet" href="../style/game.css">
+    <title>Game</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div id="customizeGame">
+        <h1 id="headline">Lets begin!</h1>
+
+        <h2 id="headlineNames">Names</h2>
+
+        <input id="nameOne" type=" text" placeholder="Player One">
+        <div id="submitNameOne" onclick="submitNameOne()">
+            <p id="textSubmitOne">Submit Name One</p>
+
+        </div>
+        <p id="succesPlayerOneName">Save Suceed!</p>
+
+        <div id="resetNameOne" onclick="resetNameOne()">
+            <p id="textResetNameOne">Reset Name One</p>
+
+        </div>
+        <p id="succesPlayerOneNameReset">Reset Suceed!</p>
+
+
+        <input id="nameTwo" type="text" placeholder="Player Two">
+        <div id="submitNameTwo" onclick="submitNameTwo()">
+            <p id="textSubmitTwo">Submit Name Two</p>
+
+        </div>
+        <p id="succesPlayerTwoName">Save Suceed!</p>
+        <div id="resetNameTwo" onclick="resetNameTwo()">
+            <p id="textResetNameTwo">Reset Name Two</p>
+
+        </div>
+        <p id="succesPlayerTwoNameReset">Reset Suceed!</p>
+
+
+
+
+
+
+        <h2 id="headlineFont">Font</h2>
+        <div>
+            <div class="changeFontButton" id="Crabby" onclick="changeFontCrabby();">Change the Font of the Website into
+                a
+                Spongebob Font</div>
+            <div class="changeFontButton" id="FamilyGuy" onclick="changeFontFamilyGuy();">Change the Font of the Website
+                into
+                a Family Guy Font</div>
+        </div>
+
+
+
+
+
+
+
+
+        <h2 id="headlineBackground">Background</h2>
+        <div id="backgrounds">
+            <div>
+                <img src="../images/Background/Images/Background1.jpg" alt="" id="background1" class="backgroundImage"
+                    onclick="backgroundImageOne()">
+                <div class="favMap">
+                    <img class="star" id="starOne" onclick="backgroundImageOne()" src="../images/Background/star.png"
+                        alt="">
+                    <p class="starText" onclick="backgroundImageOne()" id="starTextOne">Favourite Map</p>
+                </div>
+            </div>
+            <img src="../images/Background/Images/Background2.jpg" alt="" id="background2" class="backgroundImage"
+                onclick="backgroundImageTwo()">
+            <img src="../images/Background/Images/Background3.jpg" alt="" id="background3" class="backgroundImage"
+                onclick="backgroundImageThree()">
+            <img src="../images/Background/Images/BackgroundFive.jpg" alt="" id="background5" class="backgroundImage"
+                onclick="backgroundImageFour()">
+            <img src="../images/Background/Images/BackgroundFour.jpg" alt="" id="background4" class="backgroundImage"
+                onclick="backgroundImageFive()">
+            <div>
+                <img src="../images/Background/Images/BackgroundSix.jpg" alt="" id="background6" class="backgroundImage"
+                    onclick="backgroundImageSix()">
+                <div class="favMap">
+                    <img class="star" id="starTwo" onclick="backgroundImageSix()" src="../images/Background/star.png"
+                        alt="">
+                    <p onclick="backgroundImageSix()" class="starText" id="starTextTwo">Favourite Map</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <h2 id="headlineCharacter">Characters</h2>
+
+
+        <div id="PlayerOneCharacter">
+
+            <h3 id="playerOneChooseCharacter">Now <mark>Player one</mark> has to choose his Character</h3>
+
+            <div id="TeamSpongebobOne" onclick="PlayerOneTeamSpongebob()">
+                <p id="buttonTeamSpongebobOne">Team Spongebob</p>
+            </div>
+            <div id="TeamFamilyGuyOne" onclick="PlayerOneTeamFamilyGuy()">
+                <p id="buttonTeamFamilyGuyOne">Team Family Guy</p>
+            </div>
+
+            <div id="Spongebobcharacters">
+                <div id="SpongebobOne" class="character" onclick="PlayerOneCharacterSpongebob()">
+                    <p id="chooseSpongebobOne">Spongebob</p>
+                </div>
+                <div id="PatrickOne" class="character" onclick="PlayerOneCharacterPatrick()">
+                    <p id="choosePatrickOne">Patrick</p>
+                </div>
+                <div id="SquidwardOne" class="character" onclick="PlayerOneCharacterSquidward()">
+                    <p id="chooseSquidwardOne">Squidward</p>
+                </div>
+            </div>
+
+            <div id="FamilyGuycharacters">
+                <div id="MegOne" class="character" onclick="PlayerOneCharacterMeg()">
+                    <p id="chooseMegOne">Meg</p>
+                </div>
+                <div id="PeterOne" class="character" onclick="PlayerOneCharacterPeter()">
+                    <p id="choosePeterOne">Peter</p>
+                </div>
+                <div id="StewieOne" class="character" onclick="PlayerOneCharacterStewie()">
+                    <p id="chooseStewieOne">Stewie</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="PlayerTwoCharacter">
+            <h3 id="playerTwoChooseCharacter">Now <mark>Player two</mark> has to choose his Character</h3>
+
+            <div id="TeamSpongebobTwo" onclick="PlayerTwoTeamSpongebob()">
+                <p id="buttonTeamSpongebobTwo">Team Spongebob</p>
+            </div>
+            <div id="TeamFamilyGuyTwo" onclick="PlayerTwoTeamFamilyGuy()">
+                <p id="buttonTeamFamilyGuyTwo">Team Family Guy</p>
+            </div>
+
+            <div id="SpongebobcharactersTwo">
+                <div id="SpongebobTwo" class="character" onclick="PlayerTwoCharacterSpongebob()">
+                    <p id="chooseSpongebobTwo">Spongebob</p>
+                </div>
+                <div id="PatrickTwo" class="character" onclick="PlayerTwoCharacterPatrick()">
+                    <p id="choosePatrickTwo">Patrick</p>
+                </div>
+                <div id="SquidwardTwo" class="character" onclick="PlayerTwoCharacterSquidward()">
+                    <p id="chooseSquidwardTwo">Squidward</p>
+                </div>
+            </div>
+
+            <div id="FamilyGuycharactersTwo">
+                <div id="MegTwo" class="character" onclick="PlayerTwoCharacterMeg()">
+                    <p id="chooseMegTwo">Meg</p>
+                </div>
+                <div id="PeterTwo" class="character" onclick="PlayerTwoCharacterPeter()">
+                    <p id="choosePeterTwo">Peter</p>
+                </div>
+                <div id="StewieTwo" class="character" onclick="PlayerTwoCharacterStewie()">
+                    <p id="chooseStewieTwo">Stewie</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="buttonOverview" onclick="Overview()">Lets take a look at the Overview!</h2>
+
+        <div id="overview">
+            <p class="invisble" id="overviewTextOne"></p>
+            <p class="invisble" id="overviewTextTwo"></p>
+            <p class="invisble" id="overviewTextThree"></p>
+            <p class="invisble" id="overviewTextFour"></p>
+
+
+            <div id="CharacterOverviewOne"></div>
+            <div id="CharacterOverviewTwo"></div>
+        </div>
+
+        <div id="startGame"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="OverviewPlayerOne">
+        <div id="gamePlayerOne"></div>
+        <div id="healthPlayerOne"></div>
+        <div id="diceOnePackage">
+            <p id="diceOne"></p>
+
+        </div>
+    </div>
+
+    <div id="rolledDiceOne"></div>
+
+    <div id="OverviewPlayerTwo">
+
+        <div id="gamePlayerTwo"></div>
+        <div id="healthPlayerTwo"></div>
+        <div id="diceTwoPackage">
+            <p id="diceTwo"></p>
+        </div>
+    </div>
+
+    <div id="rolledDiceTwo"></div>
+
+    <div id="gifCharacterOne"></div>
+    <div id="gifCharacterTwo"></div>
+
+
+    <div id="GameOver"></div>
+
+    <div id="warning"></div>
+    <div id="back" onclick="backToMenu()">Back</div>
+
+    <div id="longer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,737 @@
+@font-face {
+    font-family: 'ComicSans';
+    src: url(../Font/Comic\ Sans\ MS.ttf);
+}
+
+@font-face {
+    font-family: 'regularSpace';
+    src: url(../Font/zekton.otf);
+}
+
+@font-face {
+    font-family: 'Crabby';
+    src: url(../Font/Krabby\ Patty.ttf);
+}
+
+@font-face {
+    font-family: 'Griffins';
+    src: url(../Font/Famig___.TTF);
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Crabby;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 15px;
+    padding: 1%;
+    border: 2px rgb(0, 0, 0) solid;
+    text-align: center;
+    display: block;
+    margin-right: 30%;
+    margin-left: 30%;
+    user-select: none;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+body {
+    background-color: black;
+    background-image: url(../images/Background/Images/Background1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#nameOne,
+#nameTwo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    font-size: 1.5rem;
+    margin-top: 6%;
+}
+
+input {
+    font-family: ComicSans;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 15px;
+    padding: 1%;
+    border: 4px rgb(0, 0, 0) solid;
+}
+
+::placeholder {
+    color: rgb(207, 207, 207);
+    font-family: ComicSans;
+}
+
+
+#submitNameOne,
+#submitNameTwo {
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+
+#submitNameOne:hover,
+#submitNameTwo:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+.backgroundImage {
+    width: 100%;
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    filter: grayscale(70%);
+}
+
+.backgroundImage:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+#backgrounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+#resetNameOne,
+#resetNameTwo {
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+
+}
+
+#resetNameOne:hover,
+#resetNameTwo:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#back {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: all 0.3s ease;
+}
+
+#back:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+mark {
+    color: rgb(0, 157, 255);
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.warning {
+    z-index: 1000;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    font-size: 2rem;
+    font-family: Crabby;
+    text-align: center;
+    padding: 5%;
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+
+    padding-bottom: 10%;
+
+}
+
+.close {
+    position: fixed;
+    top: 46%;
+    right: 30%;
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.close:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+.backToHome {
+    position: fixed;
+    top: 46%;
+    left: 30%;
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.backToHome:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+.changeFontButton {
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: all 0.3s ease;
+    z-index: 2;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    user-select: none;
+}
+
+.changeFontButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#Crabby {
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+    width: 2.5%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    /*position: absolute;*/
+
+}
+
+.star:hover {
+    transform: scale(1.1);
+
+}
+
+.starText {
+    opacity: 0;
+
+
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 15px;
+    padding: 1%;
+    border: 2px rgb(0, 0, 0) solid;
+    font-family: Crabby;
+    transition: all 0.3s .5s ease;
+    user-select: none;
+}
+
+
+
+.favMap:hover .starText {
+    opacity: 1;
+}
+
+#starOne {
+    position: absolute;
+    top: 150%;
+    left: 11%;
+}
+
+#starTextOne {
+    position: absolute;
+    top: 141%;
+    left: 8.4%;
+}
+
+#starTwo {
+    position: absolute;
+    top: 174%;
+    right: 31%;
+}
+
+#starTextTwo {
+    position: absolute;
+    top: 165%;
+    right: 27%;
+}
+
+p {
+    font-family: Crabby;
+}
+
+#SpongebobOne,
+#PatrickOne,
+#SquidwardOne,
+#MegOne,
+#PeterOne,
+#StewieOne {
+    display: none;
+}
+
+#SpongebobTwo,
+#PatrickTwo,
+#SquidwardTwo,
+#MegTwo,
+#PeterTwo,
+#StewieTwo {
+    display: none;
+}
+
+#chooseSpongebobOne,
+#choosePatrickOne,
+#chooseSquidwardOne,
+#chooseMegOne,
+#choosePeterOne,
+#chooseStewieOne,
+#chooseSpongebobTwo,
+#choosePatrickTwo,
+#chooseSquidwardTwo,
+#chooseMegTwo,
+#choosePeterTwo,
+#chooseStewieTwo {
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+#chooseSpongebobOne:hover,
+#choosePatrickOne:hover,
+#chooseSquidwardOne:hover,
+#chooseMegOne:hover,
+#choosePeterOne:hover,
+#chooseStewieOne:hover,
+#chooseSpongebobTwo:hover,
+#choosePatrickTwo:hover,
+#chooseSquidwardTwo:hover,
+#chooseMegTwo:hover,
+#choosePeterTwo:hover,
+#chooseStewieTwo:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#buttonTeamFamilyGuyOne,
+#buttonTeamSpongebobOne,
+#buttonTeamFamilyGuyTwo,
+#buttonTeamSpongebobTwo {
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+#buttonTeamFamilyGuyOne:hover,
+#buttonTeamSpongebobOne:hover,
+#buttonTeamFamilyGuyTwo:hover,
+#buttonTeamSpongebobTwo:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#PlayerTwoCharacter {
+    display: none;
+}
+
+#longer {
+    height: 500px;
+}
+
+#buttonOverview {
+
+    text-align: center;
+    padding: 2%;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.801);
+    ;
+    border-radius: 15px;
+    border: 4px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+#buttonOverview:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 4px rgb(255, 255, 255) solid;
+}
+
+.overview {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 15px;
+    padding: 1%;
+    border: 2px rgb(0, 0, 0) solid;
+    text-align: center;
+    display: block;
+    margin-right: 30%;
+    margin-left: 30%;
+    user-select: none;
+    font-size: 2rem;
+}
+
+.imageOverview {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border: black 4px solid;
+}
+
+.startGame {
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.startGame:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#CharacterPlayerOne,
+#CharacterPlayerTwo {
+    display: none;
+
+}
+
+#succesPlayerOneName,
+#succesPlayerOneNameReset,
+#succesPlayerTwoName,
+#succesPlayerTwoNameReset {
+    display: none;
+    font-family: Crabby;
+    text-align: center;
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+    text-align: center;
+}
+
+#succesPlayerOneName,
+#succesPlayerOneNameReset {
+    position: absolute;
+    top: 33%;
+    left: 29%;
+}
+
+#succesPlayerTwoName,
+#succesPlayerTwoNameReset {
+    position: absolute;
+    top: 65%;
+    right: 29%;
+}
+
+
+#OverviewPlayerTwo {
+    text-align: left;
+    display: block;
+    margin-right: auto;
+}
+
+#invisble {
+    display: none;
+}
+
+#OverviewPlayerOne {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.648);
+    border: 4px black solid;
+    padding: 2%;
+    color: white;
+    border-radius: 15px;
+}
+
+#OverviewPlayerTwo {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.648);
+    border: 4px black solid;
+    padding: 2%;
+    padding-bottom: 1%;
+    color: white;
+    border-radius: 15px;
+}
+
+#diceOne,
+#diceTwo {
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.648);
+    border: 4px black solid;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+    padding: 2%;
+    text-align: center;
+}
+
+.GameOver {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    font-size: 2rem;
+    font-family: Crabby;
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 2.5%;
+    border-radius: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+#playAgainButton {
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px rgba(0, 0, 0, 0) solid;
+}
+
+#playAgainButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#overviewTextOne {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 15px;
+    border: solid 4px black;
+}
+
+#rolledDiceOne img {
+    width: 10%;
+    border-radius: 15px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+#rolledDiceTwo img {
+    width: 10%;
+    border-radius: 15px;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+}
+
+#OverviewPlayerOne,
+#OverviewPlayerTwo {
+    width: 17%;
+}
+
+.positionGifsOne {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+.positionGifsTwo {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
